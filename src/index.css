@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+
+body {
+  @apply bg-bone-50 text-ink-900 dark:bg-ink-900 dark:text-bone-100 font-sans antialiased;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { @apply bg-black/10 dark:bg-white/10 rounded-full; }
+
+.serif { font-family: 'Playfair Display', Georgia, serif; }
